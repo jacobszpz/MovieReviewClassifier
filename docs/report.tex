@@ -1,12 +1,33 @@
 \documentclass[a4paper,12pt]{article}
 
+% Referencing and more
+\usepackage[british]{babel}
+\usepackage{csquotes}
+\usepackage[style=apa,backend=biber]{biblatex}
+
+% Title page
 \title{Sentiment Analysis of Movie Reviews}
 \author{Jacob Sánchez}
 \date{} % delete this line to display the current date
 
+
+% .bib Files
+\addbibresource{acl2011.bib}
 \begin{document}
 
 \maketitle
 
+
+\section{Introduction}
+\section{Background Reading}
+\section{Data}
+
+The primary source of data for the training of this model is the Large Movie Review Dataset \parencite{maas2011ACL}. It contains 25,000 \enquote{highly polar} reviews for training purposes, and just as many additional reviews for testing.
+
+\section{Model Development}
+\section{Model Evaluation}
+\section{Conclusion}
+
+\printbibliography
 
 \end{document}
