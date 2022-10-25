@@ -1,9 +1,13 @@
 \documentclass[a4paper,12pt]{article}
 
+% Code
+\usepackage{minted}
+
 % Referencing and more
 \usepackage[british]{babel}
 \usepackage{csquotes}
 \usepackage[style=apa,backend=biber]{biblatex}
+
 
 % Title page
 \title{Sentiment Analysis of Movie Reviews}
@@ -17,12 +21,18 @@
 
 \maketitle
 
-
 \section{Introduction}
+
+The following report details the design, development, and testing of a sentiment analysis model which purpose is to classify movie reviews from a dataset depending on whether the reviewer's attitude towards the film was positive or negative. Reviews for training and testing were obtained from a dataset taken from IMDb (Internet Movie Database) \parencite{maas2011ACL}.
+
 \section{Background Reading}
 \section{Data}
 
 The primary source of data for the training of this model is the Large Movie Review Dataset \parencite{maas2011ACL}. It contains 25,000 \enquote{highly polar} reviews for training purposes, and just as many additional reviews for testing.
+
+The dataset was downloaded and the {\tt .tar.gz} file was unpacked. The dataset consists of two top-level folders named {\tt /train} and {\tt /test}, each with {\tt /pos} and {\tt /neg} subfolders, containing positive and negative reviews, respectively. Inside of these reside the reviews, each on one file, with a naming format of {\tt [\$id\_\$rating.txt]}, where id is a unique integer and rating is a score from 1 to 10 given along the review.
+
+Before using the data, some preprocessing is necessary, since the reviews still contain some HTML tags.
 
 \section{Model Development}
 \section{Model Evaluation}
