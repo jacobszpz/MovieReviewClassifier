@@ -8,9 +8,13 @@ detailing the development and testing of the model.
 > It is possible to determine whether a viewer will enjoy a movie by reading its reviews. Critics often use movie-rating websites to post reviews and rate movies. The attitude of critics can be determined by analysing their reviews. Based on the text of movie reviews, you will create a sentiment analysis model to classify them as positive or negative.
 > You will be using the Large Movie Review Dataset from the Internet Movie Database (IMDb), which contains 50,000 movie reviews. They are divided into 25,000 reviews for training and 25,000 reviews for testing. There are equal numbers of positive and negative reviews in both the training and testing sets.
 
+
+
 ## Authorship
 
 **Jacob Sanchez Perez \<jsanchez-perez@uclan.ac.uk>**
+
+
 
 ## License
 

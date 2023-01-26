@@ -443,3 +443,12 @@ TSWLatexianTemp*
 
 # End of https://www.toptal.com/developers/gitignore/api/latex
 #
+
+# vim
+.tmp
+.sav
+
+# Dataset
+aclImdb/
+acl_test_pickle
+acl_train_pickle
